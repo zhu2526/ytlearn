@@ -31,8 +31,8 @@ youtube 链接
 需要 Python 3.10+。
 
 ```bash
-git clone https://github.com/zhu2526/zhu2526.git
-cd zhu2526
+git clone https://github.com/zhu2526/ytlearn.git
+cd ytlearn
 pip install -r requirements.txt
 pip install -e .
 ```

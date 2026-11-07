@@ -9,7 +9,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-REPO="${REPO:-zhu2526/zhu2526}"
+REPO="${REPO:-zhu2526/ytlearn}"
 BRANCH="${BRANCH:-main}"
 
 if [ -z "${GITHUB_TOKEN:-}" ]; then
