@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytlearn"
+version = "0.1.0"
+description = "把 YouTube 视频变成可追问、可回看的个人知识库"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["yt-dlp>=2024.11.18", "imageio-ffmpeg>=0.5.1"]
+
+[project.optional-dependencies]
+whisper = ["faster-whisper>=1.0.0"]
+
+[project.scripts]
+ytlearn = "ytlearn.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ytlearn*"]
